@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Slab:wght@300&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(223, 218, 218);
+    /* width: 230px; */
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    height: 185vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 5vh;
+    font-size: 25px;
+}
+
+ul li {
+    list-style: none;
+    padding: 4vh 0;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    /* background-color: rgb(0, 55, 255); */
+    height: 55vh;
+    width: 84vw;
+    margin: 132px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devpic img {
+    height: 55vh;
+}
+
+.devinfo {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 2.2em;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 12px;
+}
+
+.btn {
+    margin: 23px;
+}
+
+.btn{
+    padding: 9px 10px;
+    border: 2px solid rgb(194, 184, 184);
+    border-radius: 8px;
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+}
+
+.contactform {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 34px;
+    /* padding-top: 140px; */
+    margin: 80px;
+}
+.contactform form div input{
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform form{
+    margin: 0 30px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+}
+
+.contactform form div {
+    padding: 8px 0;
+}
+
+.form .emailHelp {
+    font-size: 11px;
+    margin-bottom: 2px;
+    color: midnightblue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-radius: 47px;
+    font-family: 'Nunito', sans-serif;
+}
+.form-label{
+    
+    padding: 4px 0;
+    margin: 7px -1px;
+    font-size: 17px;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-radius: 47px;
+}
+#phonenumber{
+    border: 2px solid black;
+    height: 30px;
+    font-size: 14px;
+}
+#clientemail{
+    border: 2px solid black;
+    height: 30px;
+    font-size: 14px;
+}
+#isclient{
+    margin: 7px 0;
+}
+#name{
+    border: 2px solid black;
+    height: 30px;
+    font-size: 14px;
+    font-size: 14px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-radius: 47px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-radius: 47px;
+}
+.btn-primary{
+    margin: -3px;
+}
+.blogitem{
+    margin: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.blogitem p{
+    /* margin: 25px; */
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+}
+h2{
+    /* margin: 23px; */
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    margin: 23px -27px;
+    font-family: 'Nunito', sans-serif;
+}
+.blogitem .btn{
+    font-size: 10px;
+    padding: 7px 12px;
+    margin: 10px 0;
+}
+.into h2{
+    font-family: 'Nunito', sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+}
+.myskillcontainer{
+    padding: 12px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800;
+}
+.skill{
+    height: 6px;
+    width: 9rem;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width: 140px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 90px;
+    background-color:aqua;
+}
+.t5{
+    width: 65px;
+    background-color: yellow;
+}
+
+.sidebargo{
+    transform: translate(-240px,0px);
+    position: absolute;
+}
+
+@media screen and (max-width:808px) {
+    .main{
+        padding: 120px;
+    }
+    .devpic{
+        display: none;
+    }
+}
+.ham{
+    margin-left: 10px;
+}
+.cross{
+    margin-left:119px;
+    height: 16px;
+    width: 16px;
+    margin-top: 5px;
+}
+.hamburger{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.blogconatiner{
+    margin: 0 88px;
+}
+.intro{
+    margin: 0 107px;
+}
+.myskillcontainer{
+    margin: 0 100px;
+}
+@media screen and (max-width:1400px) {
+    .intro .blogconatiner .contactform{
+        margin: 50px 8px;
+    }
+    .devinfo{
+        font-size: 10px;
+    }
+}
+.nothing{
+    font-family: 'Source Code Pro', monospace;
+    height: 30px;
+    position: absolute;
+    bottom: 4px;
+    color: whitesmoke;
+    background-color: black;
+    border: 2px solid red;
+}
